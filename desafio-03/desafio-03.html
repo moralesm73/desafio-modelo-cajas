@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+        }
+        .contiene-banderas{
+            max-width: 1100px;
+            width:90%;
+            margin: 0 auto;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .bandera{
+            position: relative;
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .espania {
+            background-color: #ffff00;
+            height: 300px;
+            position: relative;
+        }
+        .espania__rojo{
+            background-color: #ff0000;
+            height: 80px;
+            position: absolute;
+        }
+        .espania__rojo--superior{
+            top:0;
+            width: 100%;
+        }
+        .espania__rojo--inferior{
+            bottom:0;
+            width: 100%;
+        }
+        .dinamarca{
+            background-color: #ff0000;
+            height: 300px;
+            position: relative;
+        }
+        .dinamarca__blanco{
+            position: absolute;
+            background-color: #FFFFFF;
+        }
+        .dinamarca__blanco--vertical{
+            width: 30px;
+            height: 100%;
+            left: 33%;
+            top: 0;
+        }
+        .dinamarca__blanco--horizontal{
+            width: 100%;
+            height: 30px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .emiratos-arabes{
+            background-color: #ff0000;
+            height: 300px;
+            position: relative
+        }
+        .emiratos-arabes__franja{
+            position: relative;
+            height: 100px;
+            width: 80%;
+            float: right;
+        }
+        .emiratos-arabes__franja--verde{
+            background-color: #008000;
+        }
+        .emiratos-arabes__franja--blanco{
+            background-color: #FFFFFF;
+        }
+        .emiratos-arabes__franja--negro{
+            background-color: #000;
+        }
+        .japon{
+            background-color: #FFF;
+            position: relative;
+            height: 300px;
+            border: 1px solid gray;
+        }
+        .japon__circulo{
+            position: absolute;
+            background-color: #ff0000;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="contiene-banderas">
+        <section class="bandera">
+            <div class="espania">
+                <div class="espania__rojo espania__rojo--superior"></div>
+                <div class="espania__rojo espania__rojo--inferior"></div>
+            </div>
+            <p>España</p>
+        </section>
+        <section class="bandera">
+            <div class="dinamarca">
+                <div class="dinamarca__blanco dinamarca__blanco--vertical"></div>
+                <div class="dinamarca__blanco dinamarca__blanco--horizontal"></div>
+            </div>
+            <p>Dinamarca</p>
+        </section>
+        <section class="bandera">
+            <div class="emiratos-arabes">
+                <div class="emiratos-arabes__franja emiratos-arabes__franja--verde"></div>
+                <div class="emiratos-arabes__franja emiratos-arabes__franja--blanco"></div>
+                <div class="emiratos-arabes__franja emiratos-arabes__franja--negro"></div>
+            </div>
+            <p>Emiratos Árabes</p>
+        </section>
+        <section class="bandera">
+            <div class="japon">
+                <div class="japon__circulo"></div>
+            </div>
+            <p>Japón</p>
+        </section>
+    </div>
+</body>
+</html>

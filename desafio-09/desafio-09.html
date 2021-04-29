@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            box-sizing: border-box;
+        }
+        p{
+            margin:0 0 10px;
+        }
+        p:last-child{
+            margin: 0;
+        }
+        .container{
+            max-width: 1000px;
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+        }
+        .title{
+            background: #000;
+            color: #FFF;
+            padding: 10px 10px 4px;
+            margin: 0;
+        }
+        .cuerpo{
+            width: 100%;
+            overflow: hidden;
+        }
+        .cuerpo__section{
+            padding: 1rem;
+            height: 100%;
+        }
+        .cuerpo__section h2{
+            color: #000;
+            margin: 0 0 10px;
+        }
+        .cuerpo__section--left {
+            background: #eeeeee;
+            float: left;
+            width:30%;
+        }
+        .cuerpo__section--right{
+            background: #FFF;
+            float:right;
+            width: 70%;
+        }
+        .cuerpo__lista {
+            margin: 10px 0 30px;
+        }
+        .cuerpo__lista li a {
+            text-decoration: none;
+        }
+        .cuerpo__lista li a:hover {
+            text-decoration: underline;
+        }
+        .footer {
+            background: #aaaaaa;
+        }
+        .footer__text {
+            color: #FFF;
+            font-size: 15px;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Título página</h1>
+        <div class="cuerpo">
+            <div class="cuerpo__section cuerpo__section--left">
+                <h2>Menú</h2>
+                <ul class="cuerpo__lista">
+                    <li><a href="#">Item-1</a></li>
+                    <li><a href="#">Item-2</a></li>
+                    <li><a href="#">Item-3</a></li>
+                    <li><a href="#">Item-4</a></li>
+                    <li><a href="#">Item-5</a></li>
+                </ul>
+            </div>
+            <div class="cuerpo__section cuerpo__section--right">
+                <h2>Sub-título</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima suscipit quia incidunt exercitationem possimus in! Tenetur doloribus iste voluptates minima eius natus labore, rem laborum. Fugit officia dignissimos consectetur amet.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ullam quia ratione consectetur sapiente maiores aperiam libero et, fugiat sed laudantium tenetur est architecto rem dolores, natus exercitationem. Delectus, quae.</p>
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="footer__text">&copy; Todos los derechos reservados</p>
+        </footer>
+    </div>
+</body>
+</html>
